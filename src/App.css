@@ -1,0 +1,418 @@
+.nav-link{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  margin-right: 20px;
+  color:white;
+}
+.nav-link:hover{
+  color: white; 
+  background-color: black;
+  border-radius: 10px;
+}
+.nav-link:focus{
+  color: black;
+  background-color: #5dff43;
+  border-radius: 10px;
+}
+.nav-link:active{
+  color: black;
+  background-color: #5dff43;
+  border-radius: 10px;
+}
+.BackgroundDiv1 {
+  background-image: url('./images/city.jpg');
+  background-repeat:space;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color:rgba(93, 255, 67, 0.8);
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius:50%;
+  height: 48px;
+  width: 46px;
+}
+.PhotoSigContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Position{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+  gap: 10px;
+  color:honeydew;
+  text-decoration:none;
+  margin-left: 250px;
+}
+.avatar{
+  height: 600px;
+  width: 330px;
+  overflow: hidden;
+}
+.Photo{
+  margin-top: 100px;
+}
+
+.avatar {
+  width: 570px;
+  height: 560px;
+  border-radius:50%;
+}
+@media (min-width:0px){
+  .avatar {
+    width: 260px;
+    height: 260px;
+    border-radius:50%;
+  }
+}
+@media (min-width:320px) and (max-width:480px){
+  .avatar{
+    height: 340px;
+    width: 340px;
+  }
+  .Profile2{
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width:481px) and (max-width:768px){
+  .avatar {
+    width: 450px;
+    height: 440px;
+    border-radius:50%;
+  }
+  .Profile2{
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width:769px) and (max-width:1024px){
+  .avatar {
+    width: 500px;
+    height: 500px;
+    border-radius:50%;
+  }
+  .Profile2{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width:1025px) and (max-width:1280px){
+  .avatar {
+    width: 480px;
+    height: 480px;
+    border-radius:50%;
+  }
+  .Profile2{
+    width: 300px;
+    height: 300px;
+  }
+  #sidebar{
+    width: 40%;
+  }
+}
+@media (min-width:1281px)and (max-width:1430px){
+  .avatar {
+    width: 510px;
+    height: 500px;
+    border-radius:50%;
+  }
+  .Profile2{
+    width: 300px;
+    height: 300px;
+  }
+  #sidebar{
+    width: 34%;
+  }
+}
+@media (min-width:1431px){
+  .avatar {
+    width: 560px;
+    height: 550px;
+    border-radius:50%;
+  }
+  .Profile2{
+    width: 320px;
+    height: 320px;
+  }
+  #sidebar{
+    width: 28%;
+  }
+
+}
+.Sign{
+  background-color:whitesmoke;
+  mix-blend-mode:color-dodge;
+}
+.Name{
+  overflow: hidden;
+  color: #FED0BB;
+  border-right: .5rem solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15rem;
+  animation: typing 3.5s steps(40,end),blink-caret .75s step-end;
+}
+.Description{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.AboutMeHead{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:600;
+  color:#5dff43;
+  margin-top: 130px;
+}
+@keyframes typing{
+  from{width:0}
+  to{width: 50%}
+}
+@keyframes blink-caret{
+  from,to{border-color:transparent}
+  50% {border-color:orange;}
+} 
+.Profile2{
+  border-radius: 50%;
+}
+.OffCanvasContent{
+  align-items:center ;
+  height: 100vh;
+  overflow-y: auto;
+}
+.OffCanvasHeader{
+  display: flex;
+  flex-direction: column;
+}
+.CanvasProfileName{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.Contact{
+  margin-top: -70px;
+}
+.ContactHead,.StrengthsHead{
+  color: #5dff43;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:x-large;
+  margin-top: 130px;
+}
+.MailAddress,.PhoneNumber,.LinkedInAddress,.GithubDiv{
+  display:flex;
+}
+.Strength,.Hobbie{
+  height: 50px;
+  width: 100%;
+}
+.x{
+  display: flex;
+  flex-direction: column;
+}
+.l{
+  height: 60px;
+}
+.Button{
+  color:white;
+  background-color: black;
+  margin-top: 150px;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  padding:15px 36px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: none;
+}
+.Button:active{
+  transform: scale(0.96);
+}
+.Button:hover{
+  background-color: #5dff43;
+  color: #000;
+}
+.Education{
+  display: flex;
+  justify-content: space-evenly;
+}
+.EducationHead,.SkillsHead,.ProjectsHead,.CertificatesHead{
+  font-family: 'Oswald', sans-serif;
+  font-size:55px;
+  color:#5dff43;
+  letter-spacing: 4px;
+}
+.Educations{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+}
+.Educations:hover{
+  background-color:black;
+  color:black;
+}
+.Carousel{
+  height: 600px;
+}
+.Projects{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+}
+.CarouselImg{
+  height: 600px;
+  width: 900px;
+  border-radius: 10px;
+}
+.Skills{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+}
+.Certificate{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+}
+.Certify{
+  letter-spacing: 0.9px;
+}
+@media (min-width:320px) and (max-width:480px){
+  .Carousel{
+    height: 750px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 250px;
+    width: 25rem;
+  }
+  .ProjectContent{
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 260px;
+    height: 250px;
+  }
+}
+@media (min-width:481px) and (max-width:768px){
+  .Carousel{
+    height: 670px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 250px;
+    width: 25rem;
+  }
+  .ProjectContent{
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (min-width:769px) and (max-width:1024px){
+  .Carousel{
+    height: 670px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 300px;
+    width: 30rem;
+  }
+  .ProjectContent{
+    margin-top: 60px;
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 400px;
+    height: 340px;
+  }
+}
+@media (min-width:1025px) and (max-width:1280px){
+  .Carousel{
+    height: 670px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 400px;
+    width: 42rem;
+  }
+  .ProjectContent{
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width:1281px)and (max-width:1430px){
+  .Carousel{
+    height: 670px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 450px;
+    width: 45rem;
+  }
+  .ProjectContent{
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width:1431px){
+  .Carousel{
+    height: 670px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 440px;
+    width: 46rem;
+  }
+  .ProjectContent{
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 440px;
+    height: 330px;
+  }
+}
+.Footer{
+  margin-top: 80px;
+}
+.Bold{
+  font-weight:bold;
+  color: red;
+}
