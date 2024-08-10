@@ -1,1 +1,1 @@
-before running the "npm start" command, Just install all npm modules.
+Before running the "npm start" command, Just install all npm modules.
