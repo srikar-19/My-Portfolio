@@ -1,8 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+* {
+  transition: all 0.3s ease-out;
+}
 .nav-link{
   font-family: 'Oswald', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-size: larger;
   margin-right: 20px;
+  border-radius: 10px;
   color:white;
 }
 .nav-link:hover{
@@ -20,8 +27,12 @@
   background-color: #5dff43;
   border-radius: 10px;
 }
-.BackgroundDiv1 {
-  background-image: url('./images/city.jpg');
+
+.BackgroundDiv2{
+  margin-top: 150px;
+}
+.BackgroundDivImg{
+  background-image: url('./images/cityBack.jpg');
   background-repeat:space;
   background-size: cover;
   scroll-behavior: smooth;
@@ -58,102 +69,15 @@
   text-decoration:none;
   margin-left: 250px;
 }
-.avatar{
-  height: 600px;
-  width: 330px;
-  overflow: hidden;
-}
-.Photo{
-  margin-top: 100px;
-}
-
-.avatar {
-  width: 570px;
-  height: 560px;
+.Profile1{
   border-radius:50%;
 }
-@media (min-width:0px){
-  .avatar {
-    width: 260px;
-    height: 260px;
-    border-radius:50%;
-  }
+.Name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  font-weight: 200;
 }
-@media (min-width:320px) and (max-width:480px){
-  .avatar{
-    height: 340px;
-    width: 340px;
-  }
-  .Profile2{
-    width: 290px;
-    height: 290px;
-  }
-}
-@media (min-width:481px) and (max-width:768px){
-  .avatar {
-    width: 450px;
-    height: 440px;
-    border-radius:50%;
-  }
-  .Profile2{
-    width: 290px;
-    height: 290px;
-  }
-}
-@media (min-width:769px) and (max-width:1024px){
-  .avatar {
-    width: 500px;
-    height: 500px;
-    border-radius:50%;
-  }
-  .Profile2{
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (min-width:1025px) and (max-width:1280px){
-  .avatar {
-    width: 480px;
-    height: 480px;
-    border-radius:50%;
-  }
-  .Profile2{
-    width: 300px;
-    height: 300px;
-  }
-  #sidebar{
-    width: 40%;
-  }
-}
-@media (min-width:1281px)and (max-width:1430px){
-  .avatar {
-    width: 510px;
-    height: 500px;
-    border-radius:50%;
-  }
-  .Profile2{
-    width: 300px;
-    height: 300px;
-  }
-  #sidebar{
-    width: 34%;
-  }
-}
-@media (min-width:1431px){
-  .avatar {
-    width: 560px;
-    height: 550px;
-    border-radius:50%;
-  }
-  .Profile2{
-    width: 320px;
-    height: 320px;
-  }
-  #sidebar{
-    width: 28%;
-  }
 
-}
 .Sign{
   background-color:whitesmoke;
   mix-blend-mode:color-dodge;
@@ -166,11 +90,20 @@
   margin: 0 auto;
   letter-spacing: .15rem;
   animation: typing 3.5s steps(40,end),blink-caret .75s step-end;
+  /* background-image:url('https://cdn.wallpapersafari.com/87/43/FMqPpX.jpg');
+  background-size:cover;
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  font-size: 75px;
+  font-weight: bold; */
 }
 .Description{
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
-  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  color:#5dff43;
 }
 .AboutMeHead{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -228,7 +161,7 @@
 .Button{
   color:white;
   background-color: black;
-  margin-top: 150px;
+  margin-top: 100px;
   font-family: 'Oswald', sans-serif;
   font-family: 'Poppins', sans-serif;
   padding:15px 36px;
@@ -243,28 +176,104 @@
   background-color: #5dff43;
   color: #000;
 }
+
+
+
+/* Education section */
+
 .Education{
   display: flex;
   justify-content: space-evenly;
 }
-.EducationHead,.SkillsHead,.ProjectsHead,.CertificatesHead{
-  font-family: 'Oswald', sans-serif;
-  font-size:55px;
-  color:#5dff43;
-  letter-spacing: 4px;
+.Educations {
+  /* width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
 }
-.Educations{
-  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
-  border: 1px solid rgba(255,255,255,0.18);
-  border-radius: 32px;
+
+
+.clg {
+  letter-spacing: 1.5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
 }
-.Educations:hover{
-  background-color:black;
-  color:black;
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin-left: 150px;
 }
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #4298C3;
+  left: 20%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  font-size: 19px;
+  padding: 20px 0;
+  position: relative;
+  width: 50%;
+  left: 20%;
+}
+
+.timeline-item:before {
+  content: attr(data-date);
+  position: absolute;
+  top: 15px;
+  width: 120px;
+  text-align: right;
+  right: calc(100% + 20px);
+  color: #4298C3;
+  font-size: 0.9em;
+}
+
+.timeline-icon {
+  background: #4298C3;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: rgba(66, 152, 195, 0.1);
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  /* position: relative; */
+  
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #4298C3;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+}
+
+/* Projects section */
+
 .Carousel{
   height: 600px;
 }
@@ -275,12 +284,28 @@
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
   border: 1px solid rgba(255,255,255,0.18);
   border-radius: 32px;
+  /* height: 520px; */
+}
+.ProjectDesc{
+  letter-spacing: 1px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  /* font-weight: 400; */
+  color: #1a4046;
+}
+.Tech{
+  color:cadetblue;
+  font-size:larger;
+  font-weight:bolder;
 }
 .CarouselImg{
   height: 600px;
   width: 900px;
-  border-radius: 10px;
 }
+
+
+/* Skills section */
+
 .Skills{
   background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
   -webkit-backdrop-filter: blur(100px);
@@ -289,6 +314,13 @@
   border: 1px solid rgba(255,255,255,0.18);
   border-radius: 32px;
 }
+.progress-bar{
+  background-color: #000;
+}
+
+
+/* Certificates section */
+
 .Certificate{
   background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
   -webkit-backdrop-filter: blur(100px);
@@ -300,50 +332,636 @@
 .Certify{
   letter-spacing: 0.9px;
 }
+
+
+/* Achievements section */
+
+.AchievementsSection{
+  margin-top: 250px;
+}
+.Achievements{
+  background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+}
+.AchievementsList{
+  list-style-position: inside; /* Ensures list numbers are inside the content area */
+  padding-left: 0; /* Removes default padding */
+  margin-left: 0; /* Removes default margin */
+  list-style-type:none;
+}
+.AchievementsList li {
+  text-align: left; /* Aligns text to the left */
+  padding-left: 1.5rem; /* Adds padding to align text with the numbers */
+}
+.ListItem{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight:bolder;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  color: cadetblue;
+}
+.Head1,.Head2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  font-weight:bolder;
+  line-height: 20px;
+  letter-spacing: 1.3px;
+  text-decoration:underline;
+  text-align: left; /* Aligns text to the left */
+  padding-left: 1.5rem; /* Adds padding to align text with the numbers */
+}
+.Download{
+  font-weight:500;
+  letter-spacing: 1px;
+  font-size:larger;
+}
+.DownloadBtn:hover{
+  background-color:blue;
+}
+/* Footer section */
+
+.footerDesc1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  font-weight:500;
+}
+.footerDesc2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-style: italic;
+  color:darkgrey;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.footerDesc3{
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.Footer{
+  margin-top: 80px;
+}
+/* Common of Education, Projects, Skills, Certifications, Achievements */
+
+.EducationHead,.SkillsHead,.ProjectsHead,.CertificatesHead,.AchievementsHead{
+  font-family: 'Oswald', sans-serif;
+  font-size:55px;
+  color:#5dff43;
+  letter-spacing: 4px;
+}
+.Bold{
+  color: cadetblue;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Media queries for Sitename and name */
+
+@media (min-width:0px) and (max-width:480px){
+  .SiteName{
+    font-size: 14px;
+  }
+}
+@media (min-width:481px) and (max-width:800px){
+  .SiteName{
+    font-size: 20px;
+  }
+}
+/* ... */
+@media (min-width:0px) and (max-width:480px){
+  .Name{
+    font-size: 40px;
+  }
+}
+@media (min-width:481px) and (max-width:600px){
+  .Name{
+    font-size: 56px;
+  }
+}
+/* Media queries for Profile image and section */
+
+@media (min-width:0px){
+  .avatar {
+    width: 300px;
+    height: 300px;
+  }
+}
 @media (min-width:320px) and (max-width:480px){
+  .avatar{
+    width: 340px;
+    height: 330px;
+  }
+  .Profile2{
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width:481px) and (max-width:768px){
+  .avatar {
+    width: 430px;
+    height: 410px;
+  }
+  .Profile2{
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (min-width:769px) and (max-width:1024px){
+  .avatar {
+    width: 470px;
+    height: 460px;
+  }
+  .Profile2{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width:1025px) and (max-width:1280px){
+  .avatar {
+    width: 480px;
+    height: 480px;
+  }
+  .Profile2{
+    width: 300px;
+    height: 300px;
+  }
+  #sidebar{
+    width: 40%;
+  }
+}
+@media (min-width:1281px)and (max-width:1430px){
+  .avatar {
+    width: 510px;
+    height: 500px;
+  }
+  .Profile2{
+    width: 300px;
+    height: 300px;
+  }
+  #sidebar{
+    width: 34%;
+  }
+}
+@media (min-width:1431px){
+  .avatar {
+    width: 570px;
+    height: 550px;
+    /* border-radius:50%; */
+  }
+  .Profile2{
+    width: 320px;
+    height: 320px;
+  }
+  #sidebar{
+    width: 28%;
+  }
+
+}
+
+
+/* Media queries for Education section */
+
+@media (min-width: 0px) and (max-width:359px) {
+  .timeline{
+    /* width: 100px; */
+    margin-left: 0px;
+    width: 50%;
+    height: 70%;
+  }
+  .timeline-item {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 250px;
+    height: 200px;
+    font-size: 12px;
+    width: 220px;
+    height: 180px;
+  }
+  .timeline-icon {
+    margin-bottom: 20px;
+  }
+  .eduHead{
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+  }
+  .clg {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 390px) {
+  .timeline{
+    margin-left: 5px;
+    /* width: 100px; */
+    height: 740px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+    font-size: 12px;
+
+  }
+  .timeline-icon {
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+  }
+  .timeline-content {
+    width: 90%;
+  }
+  .eduHead{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .clg {
+    /* letter-spacing: 1px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 20px;  
+  }
+}
+@media (min-width: 391px) and (max-width: 420px) {
+  .timeline{
+    margin-left: 20px;
+    width: 100px;
+    height: 740px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 180px;
+    font-size: 16px;
+
+  }
+  .timeline-icon {
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+  }
+  .timeline-content {
+    width: 90%;
+    padding: 10px;
+  }
+  .eduHead{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .clg {
+    /* letter-spacing: 1px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}
+@media (min-width: 421px) and (max-width: 480px) {
+  .timeline{
+    margin-left: 20px;
+    width: 100px;
+    height: 740px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    width: 280px;
+    height: 200px;
+
+  }
+  .timeline-icon {
+    margin-bottom: 20px;
+  }
+  .timeline-content {
+    width: 90%;
+  }
+  .eduHead{
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .clg {
+    /* letter-spacing: 1px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 590px) {
+  .timeline{
+    margin-left: 25px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+
+  }
+  .timeline-icon {
+    margin-bottom: 20px;
+  }
+  .timeline-content {
+    width: 90%;
+  }
+  .eduHead{
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .clg {
+    letter-spacing: 1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}
+@media (min-width: 591px) and (max-width: 768px) {
+  .timeline{
+    margin-left: 0px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  .timeline-icon {
+    margin-bottom: 20px;
+  }
+  .timeline-content {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .timeline{
+    margin-left: 5px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 530px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .timeline{
+    margin-left: 50px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 540px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+  .eduHead{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .timeline{
+    margin-left: 30px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 620px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+  .eduHead{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1280px) {
+  .timeline{
+    margin-left: 70px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 620px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+  .eduHead{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1410px) {
+  .timeline{
+    margin-left: 70px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 650px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+  .eduHead{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1411px) and (max-width: 1430px) {
+  .timeline{
+    margin-left: 110px;
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 650px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+  .eduHead{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1431px) {
+  .timeline{
+    margin-left: 90px;
+    /* height: 850px; */
+  }
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 680px;
+    font-size: 20px;
+  }
+  .timeline-icon {
+    margin-right: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 40px);
+  }
+  .eduHead{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+/* Media queries for Projects and Certificates */
+
+@media (min-width:0px){
   .Carousel{
-    height: 750px;
+    height: 850px;
     width: 100%;
   }
   .CarouselImg{
     height: 250px;
-    width: 25rem;
+    width: 85%;
   }
   .ProjectContent{
     height: 600px;
     width: 100%;
   }
   .CertificateImg{
-    width: 260px;
-    height: 250px;
+    width: 130px;
+    height: 100px;
+    border-radius: 15px;
+  }
+}
+@media (min-width:320px) and (max-width:480px){
+  .Carousel{
+    height: 740px;
+    width: 100%;
+  }
+  .CarouselImg{
+    height: 280px;
+    width: 100%;
+    border-radius: 18px;
+  }
+  .ProjectContent{
+    height: 600px;
+    width: 100%;
+  }
+  .CertificateImg{
+    width: 250px;
+    height: 210px;
+    border-radius: 15px;
   }
 }
 @media (min-width:481px) and (max-width:768px){
   .Carousel{
-    height: 670px;
+    height: 660px;
     width: 100%;
   }
   .CarouselImg{
     height: 250px;
-    width: 25rem;
+    width: 90%;
+    border-radius: 18px;
   }
   .ProjectContent{
     height: 600px;
     width: 100%;
   }
   .CertificateImg{
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 310px;
+    border-radius: 15px;
   }
 }
 @media (min-width:769px) and (max-width:1024px){
   .Carousel{
-    height: 670px;
+    height: 630px;
     width: 100%;
   }
   .CarouselImg{
     height: 300px;
     width: 30rem;
+    border-radius: 18px;
   }
   .ProjectContent{
     margin-top: 60px;
@@ -351,8 +969,9 @@
     width: 100%;
   }
   .CertificateImg{
-    width: 400px;
-    height: 340px;
+    width: 490px;
+    height: 350px;
+    border-radius: 15px;
   }
 }
 @media (min-width:1025px) and (max-width:1280px){
@@ -363,56 +982,79 @@
   .CarouselImg{
     height: 400px;
     width: 42rem;
+    border-radius: 18px;
   }
   .ProjectContent{
     height: 600px;
     width: 100%;
   }
   .CertificateImg{
-    width: 400px;
+    width: 500px;
     height: 300px;
+    border-radius: 15px;
   }
 }
 @media (min-width:1281px)and (max-width:1430px){
   .Carousel{
-    height: 670px;
+    height: 710px;
     width: 100%;
   }
   .CarouselImg{
     height: 450px;
     width: 45rem;
+    border-radius: 18px;
   }
   .ProjectContent{
     height: 600px;
     width: 100%;
   }
   .CertificateImg{
-    width: 400px;
-    height: 300px;
+    width: 490px;
+    height: 340px;
+    border-radius: 15px;
   }
 }
 @media (min-width:1431px){
   .Carousel{
-    height: 670px;
+    height: 710px;
     width: 100%;
   }
   .CarouselImg{
     height: 440px;
     width: 46rem;
+    border-radius: 18px;
   }
   .ProjectContent{
     height: 600px;
     width: 100%;
   }
   .CertificateImg{
-    width: 440px;
-    height: 330px;
+    width: 490px;
+    height: 340px;
+    border-radius: 15px;
   }
 }
-.Footer{
-  margin-top: 80px;
-}
-.Bold{
-  font-weight:bold;
-  color: red;
+
+
+/* Media queries for Achievements section */
+
+@media (min-width:0) and (max-width:500px){
+  .ListItem{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight:bolder;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+    color: cadetblue;
+  }
+  .Head1,.Head2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight:bolder;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+    text-decoration:underline;
+    text-align: left; /* Aligns text to the left */
+    padding-left: 1.5rem; /* Adds padding to align text with the numbers */
+  }
 }

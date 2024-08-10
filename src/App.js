@@ -11,44 +11,28 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Certificates from './components/Certificates';
+import Achievements from './components/Achievements';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { faMeteor } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import $ from 'jQuery';
 
 function App() {
-  // const scrollToSection = (id) => {
-  //   const element = document.getElementById(id);
-  //   const navBar = document.getElementById('.navbar');
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: 'smooth' });
-  //     navBar.style.marginTop('100px');
-
-  //   }
-  // };
   return (
     <Router> {/* Add the Router component here */}
-      <div className="BackgroundDiv1 BackgroundDiv">
+      <div className="BackgroundDiv1 BackgroundDiv BackgroundDivImg">
         <div className="Body">
-          <nav className="navbar navbar-expand-lg p-3 navbar-dark bg-dark">
-          <div className="container-fluid p- mt-2">
-            <Link className="navbar-brand text-white" href='#'>Srikar Sabbani's Portfolio<FontAwesomeIcon className='ms-2' icon={faMeteor} fade /></Link>
-            <button className="navbar-toggler" type='button' data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+          <nav className="navbar navbar-expand-lg pt-4 navbar-dark">
+          <div className="container-fluid mt-2 mx-5">
+            <Link className="navbar-brand text-white SiteNameLink" href='#'><span className="SiteName">Srikar Sabbani's Portfolio</span><FontAwesomeIcon className='ms-2' icon={faMeteor} fade /></Link>
+            <button className="navbar-toggler toggler1" type='button' data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon toggler2"></span>
             </button>
             <div className="collapse navbar-collapse" id='navbarSupportedContent'>
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <NavLink className="nav-link text-white active" to="">Home</NavLink>
-                  {/* <ScrollLink
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="nav-link text-white" style={{cursor:'pointer'}}>
-                    Home
-                  </ScrollLink> */}
                 </li>
                 <li className="nav-item">
                   {/* <NavLink className="nav-link text-white" to="education">Education</NavLink> */}
@@ -93,10 +77,18 @@ function App() {
                     className="nav-link text-white" style={{cursor:'pointer'}}>
                     Certificates
                   </ScrollLink>
+                </li> 
+                <li className="nav-item">
+                  {/* <NavLink className="nav-link text-white" to="certificates">Certificates</NavLink> */}
+                  <ScrollLink
+                    to="achievements"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="nav-link text-white" style={{cursor:'pointer'}}>
+                    Achievements
+                  </ScrollLink>
                 </li>
-                {/* <li className="nav-item">
-                  <NavLink className="nav-link navlink text-white" to="chat">Chat with me</NavLink>
-                </li> */}
               </ul>
             </div>
           </div>
@@ -110,6 +102,7 @@ function App() {
           <Route path="/projects" element={<Projects />}/>
           <Route path="/skills" element={<Skills />}/>
           <Route path="/certificates" element={<Certificates />}/>
+          <Route path="/achievements" element={<Achievements />}/>
         </Routes>
       </div>
     </Router>
